@@ -5,7 +5,7 @@
   * 说明: 前面两个是官方的, 使用起来比较高效, 第三方的效果显然也没有那么好看, 大家还是看需求使用吧
   * demo 中都有详细的实现代码可以参考, 感兴趣的朋友可 Clone or download 下来看看
 
-#### 放几张效果图预览: 
+### 放几张效果图: 
   * 第一张是用 `UIBlurEffect`实现的,  第二张是用`UIToolbar`实现的,  第三张是用`LBBlurredImage`实现的
   
 <img src="IMAGE/img_002.png?v=3&s=100" alt="GitHub" title="截图001" width="260" height="480"/> 
