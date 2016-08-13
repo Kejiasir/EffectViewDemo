@@ -1,3 +1,14 @@
 ## EffectViewDemo
-#### 效果图预览:
-![截图01](http://images2015.cnblogs.com/blog/871467/201601/871467-20160114203135038-1849698601.jpg "截图01")
+## iOS 中实现毛玻璃(高斯模糊)的三种方式
+  * 第一, iOS7之前, 使用系统的 `UIToolbar` 这个类来实现
+  * 第二, iOS8之后, 官方新增了 `UIBlurEffect` 这个类来实现, 它其实是直接在图片上面盖了一层View
+  * 第三, 使用一个第三方的框架咯, [LBBlurredImage](https://github.com/lukabernardi/LBBlurredImage) 这个框架内部是直接对图片进行了渲染处理的
+  * 说明: 前面两个是官方的, 使用起来比较高效, 第三方的效果显然也没有那么好看, 大家还是看需求使用吧
+  * demo 中都有详细的实现代码可以参考, 感兴趣的朋友可 Clone or download 下来看看
+
+#### 放几张效果图预览: 
+  * 第一张是用 `UIBlurEffect`实现的,  第二张是用`UIToolbar`实现的,  第三张是用`LBBlurredImage`实现的
+  
+<img src="IMAGE/img_002.png?v=3&s=100" alt="GitHub" title="截图001" width="260" height="480"/> 
+<img src="IMAGE/img_003.png?v=3&s=100" alt="GitHub" title="截图002" width="260" height="480"/> 
+<img src="IMAGE/img_001.png?v=3&s=100" alt="GitHub" title="截图003" width="260" height="480"/> 
