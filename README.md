@@ -1,4 +1,3 @@
-## EffectViewDemo
 ## iOS 中实现毛玻璃(高斯模糊)的三种方式
   * 第一, iOS7之前, 使用系统的 `UIToolbar` 这个类来实现
   * 第二, iOS8之后, 官方新增了 `UIBlurEffect` 这个类来实现, 它其实是直接在图片上面盖了一层View
