@@ -33,25 +33,25 @@
      UIBarStyleBlack            = 1,
      UIBarStyleBlackOpaque      = 1, // Deprecated. Use UIBarStyleBlack
      UIBarStyleBlackTranslucent = 2, // Deprecated. Use UIBarStyleBlack and set the translucent property to YES
-     
+     */
      UIImageView *bgImgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
      bgImgView.image = [UIImage imageNamed:@"huoying4.jpg"];
      [self.view addSubview:bgImgView];
      
-     UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, bgImgView.frame.size.width*0.5, bgImgView.frame.size.height)];
+     UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(bgImgView.frame.size.width*0.5, 0, bgImgView.frame.size.width*0.5, bgImgView.frame.size.height)];
      toolbar.barStyle = UIBarStyleBlackTranslucent;
      [bgImgView addSubview:toolbar];
-     */
+     
     
-    UIImageView *bgImgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    //bgImgView.image = [UIImage imageNamed:@"huoying4.jpg"];
-    bgImgView.contentMode = UIViewContentModeScaleAspectFill;
-    // 方法1,没有blurRadius参数,因为默认是20
-    //[bgImgView setImageToBlur:[UIImage imageNamed:@"huoying4.jpg"] completionBlock:nil];
-    // 方法2,对背景图片进行毛玻璃效果处理,参数blurRadius默认是20,可指定,最后一个参数block回调可为nil
-    [bgImgView setImageToBlur:[UIImage imageNamed:@"huoying4.jpg"] blurRadius:30 completionBlock:nil];
-    bgImgView.userInteractionEnabled = YES;
-    [self.view addSubview:bgImgView];
+//    UIImageView *bgImgView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    //bgImgView.image = [UIImage imageNamed:@"huoying4.jpg"];
+//    bgImgView.contentMode = UIViewContentModeScaleAspectFill;
+//    // 方法1,没有blurRadius参数,因为默认是20
+//    //[bgImgView setImageToBlur:[UIImage imageNamed:@"huoying4.jpg"] completionBlock:nil];
+//    // 方法2,对背景图片进行毛玻璃效果处理,参数blurRadius默认是20,可指定,最后一个参数block回调可为nil
+//    [bgImgView setImageToBlur:[UIImage imageNamed:@"huoying4.jpg"] blurRadius:30 completionBlock:nil];
+//    bgImgView.userInteractionEnabled = YES;
+//    [self.view addSubview:bgImgView];
     
     /*
      iOS8.0
