@@ -7,7 +7,16 @@
 
 ### 放几张效果图: 
   * 第一张是用 `UIBlurEffect`实现的,  第二张是用`UIToolbar`实现的,  第三张是用`LBBlurredImage`实现的
-  
-<img src="IMAGE/img_002.png?v=3&s=100" alt="GitHub" title="截图001" width="260" height="480"/> 
-<img src="IMAGE/img_003.png?v=3&s=100" alt="GitHub" title="截图002" width="260" height="480"/> 
-<img src="IMAGE/img_001.png?v=3&s=100" alt="GitHub" title="截图003" width="260" height="480"/> 
+<table>
+ <tr>
+  <td>
+    <img src="IMAGE/img_002.png" width="300"/>
+  </td>
+  <td>
+    <img src="IMAGE/img_003.png" width="300"/>
+  </td>
+  <td>
+    <img src="IMAGE/img_001.png" width="300"/>
+  </td>
+ </tr>
+</table>
