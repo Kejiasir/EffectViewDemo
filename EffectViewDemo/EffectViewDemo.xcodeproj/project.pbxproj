@@ -17,6 +17,7 @@
 		A2061B3A1C47D0880005BFF4 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2061B381C47D0880005BFF4 /* UIImageView+LBBlurredImage.m */; };
 		A2061B3D1C47D14F0005BFF4 /* huba.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2061B3B1C47D14F0005BFF4 /* huba.jpeg */; };
 		A2061B3E1C47D14F0005BFF4 /* huoying4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2061B3C1C47D14F0005BFF4 /* huoying4.jpg */; };
+		A279C9441DC364C800ACA846 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A279C9431DC364C800ACA846 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		A2061B381C47D0880005BFF4 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
 		A2061B3B1C47D14F0005BFF4 /* huba.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huba.jpeg; sourceTree = "<group>"; };
 		A2061B3C1C47D14F0005BFF4 /* huoying4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huoying4.jpg; sourceTree = "<group>"; };
+		A279C9421DC364C800ACA846 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		A279C9431DC364C800ACA846 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				A2061B211C47D0650005BFF4 /* AppDelegate.m */,
 				A2061B231C47D0650005BFF4 /* ViewController.h */,
 				A2061B241C47D0650005BFF4 /* ViewController.m */,
+				A279C9421DC364C800ACA846 /* UIView+Extension.h */,
+				A279C9431DC364C800ACA846 /* UIView+Extension.m */,
 				A2061B261C47D0650005BFF4 /* Main.storyboard */,
 				A2061B291C47D0650005BFF4 /* Assets.xcassets */,
 				A2061B2B1C47D0650005BFF4 /* LaunchScreen.storyboard */,
@@ -175,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A279C9441DC364C800ACA846 /* UIView+Extension.m in Sources */,
 				A2061B391C47D0880005BFF4 /* UIImage+ImageEffects.m in Sources */,
 				A2061B251C47D0650005BFF4 /* ViewController.m in Sources */,
 				A2061B3A1C47D0880005BFF4 /* UIImageView+LBBlurredImage.m in Sources */,
@@ -290,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EffectViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Arvin.EffectViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EffectViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.Arvin.EffectViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,6 +334,7 @@
 				A2061B331C47D0650005BFF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
