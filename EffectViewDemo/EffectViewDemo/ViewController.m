@@ -31,14 +31,16 @@
     [bgImgView setContentMode:UIViewContentModeScaleAspectFill];
     
     //------- 使用第三方工具类的方法请把这里的代码注释掉 -------//
+    
     [bgImgView setImage:[UIImage imageNamed:@"huoying4.jpg"]];
     [self.view addSubview:bgImgView];
-    
+
     // iOS7 UIToolbar
     [self toolbar:bgImgView];
-    
+
     // iOS8 UIBlurEffect
     [self blurEffect:bgImgView];
+    
     //-------------------------------------------------//
     
     // 使用第三方工具类
@@ -48,7 +50,7 @@
     UIImageView *headImgView = [[UIImageView alloc] init];
     [bgImgView addSubview:({
         [headImgView setUserInteractionEnabled:YES];
-        [headImgView setFrame:(CGRect){bgImgView.centerX-50, 80, 106, 106}];
+        [headImgView setFrame:(CGRect){bgImgView.centerX-53, 80, 106, 106}];
         [headImgView setImage:[UIImage imageNamed:@"huba.jpeg"]];
         [headImgView setContentMode:UIViewContentModeScaleAspectFill];
         [headImgView.layer setCornerRadius:CGRectGetHeight(headImgView.frame)*0.5];
@@ -88,6 +90,9 @@
     toolbar.frame = (CGRect){0, 0, bgImgView.w * 0.5, bgImgView.h};
     toolbar.barStyle = UIBarStyleBlackTranslucent;
     [bgImgView addSubview:toolbar];
+    
+    CGRect frame = CGRectMake(0, bgImgView.h-80, kWIDTH * 0.5, 30);
+    [bgImgView addSubview:[self labelWithFrame:frame text:@"iOS7-UIToolbar"]];
 }
 
 
@@ -108,6 +113,9 @@
     effectView.frame = CGRectMake(bgImgView.w * 0.5, 0, bgImgView.w * 0.5, bgImgView.h);
     [bgImgView addSubview:effectView];
     
+    CGRect frame = CGRectMake(kWIDTH * 0.5, bgImgView.h-80, kWIDTH * 0.5, 30);
+    [bgImgView addSubview:[self labelWithFrame:frame text:@"iOS8-UIBlurEffect"]];
+    
     // 加上以下代码可以使毛玻璃特效更明亮点
     UIVibrancyEffect *vibrancyView = [UIVibrancyEffect effectForBlurEffect:effect];
     UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:vibrancyView];
@@ -123,6 +131,19 @@
     // 方法2,对背景图片进行毛玻璃效果处理,参数blurRadius默认是20,可指定,最后一个参数block回调可为nil
     [bgImgView setImageToBlur:[UIImage imageNamed:@"huoying4.jpg"] blurRadius:35 completionBlock:nil];
     [self.view addSubview:bgImgView];
+    
+    CGRect frame = CGRectMake(0, bgImgView.h-80, kWIDTH, 30);
+    [bgImgView addSubview:[self labelWithFrame:frame text:@"LBBlurredImage"]];
+}
+
+
+- (UILabel *)labelWithFrame:(CGRect)frame text:(NSString *)text {
+    UILabel *label = [[UILabel alloc] initWithFrame:frame];
+    label.text = text;
+    label.textColor = [UIColor redColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont systemFontOfSize:FONT_SIZE];
+    return label;
 }
 
 
